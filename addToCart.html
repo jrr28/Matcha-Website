@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel = "stylesheet" type = "text/css" href = "addToCart.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha Cafe - Add To Cart </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <header>
+    <div class="logo">迎</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addToCart.html">Menu</a></li> <!--ADD FUNCTIONAL A FUNCTIONAL HTML LINK HERE-->
+            <li><a href="#">Blog</a></li> <!--ADD FUNCTIONAL A FUNCTIONAL HTML LINK HERE-->
+            <li><a href="#">Contact</a></li> <!--ADD FUNCTIONAL A FUNCTIONAL HTML LINK HERE-->
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button>&#128269;</button>
+        </div>
+        <div class="icons">
+            <div class="cart-icon">&#128722;</div>
+            <a href="register.html"><div class="profile-icon">&#128100;</div></a>
+        </div>
+    </nav>
+</header>
+
+  <header class="flex justify-between items-center p-4 bg-green-600 text-white">
+    <div class="page-controls">
+    </div>
+    <h1 class="text-2xl font-semibold">Selections</h1>
+    <div class="page-controls">
+    </div>
+  </header>
+
+
+  <div class="container mx-auto p-4">
+    <!-- Products Container -->
+    <div class="products-container">
+      <h2 class="text-xl font-bold text-center mb-6">Matcha Café Menu</h2>
+      <p class="text-center mb-6 text-sm text-gray-700">Use the "Add to Cart" buttons below to build your order</p>
+
+      <!-- Page 1: Beverages -->
+      <div class="category mb-8">
+        <h3 class="text-lg font-semibold mb-4">Drinks</h3>
+        <div class="products-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+           <!-- Product 1: Matcha Latte -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="1" data-name="Matcha Latte" data-category="drinks">
+            <img src="Matcha Latte.jpg" alt="Matcha Latte" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Latte</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 85.00</div>
+              <div class="variant-item">Grande - Php 100.00</div>
+              <div class="variant-item">Venti - Php 115.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="85.00">Regular - Php 85.00</option>
+              <option value="grande" data-price="100.00">Grande - Php 100.00</option>
+              <option value="venti" data-price="115.00">Venti - Php 115.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 2: Matcha Frappucino -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="2" data-name="Matcha Frappucino" data-category="drinks">
+            <img src="Matcha Frappucino.png" alt="Matcha Frappucino" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Frappucino</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 85.00</div>
+              <div class="variant-item">Grande - Php 100.00</div>
+              <div class="variant-item">Venti - Php 115.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="85.00">Regular - Php 85.00</option>
+              <option value="grande" data-price="100.00">Grande - Php 100.00</option>
+              <option value="venti" data-price="115.00">Venti - Php 115.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 3: Matcha Milktea -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="3" data-name="Matcha Milktea" data-category="drinks">
+            <img src="Matcha Milk Tea.png" alt="Matcha Milktea" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Milktea</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 85.00</div>
+              <div class="variant-item">Grande - Php 100.00</div>
+              <div class="variant-item">Venti - Php 115.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="85.00">Regular - Php 85.00</option>
+              <option value="grande" data-price="100.00">Grande - Php 110.00</option>
+              <option value="venti" data-price="115.00">Venti - Php 115.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 4: Matcha Chocolate Coffee -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="4" data-name="Matcha Chocolate Coffee" data-category="drinks">
+            <img src="Matcha Chocolate Coffee.png" alt="Matcha Chocolate Coffee" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Chocolate Coffee</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 60.00</div>
+              <div class="variant-item">Grande - Php 80.00</div>
+              <div class="variant-item">Venti - Php 100.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="60.00">Regular - Php 60.00</option>
+              <option value="grande" data-price="80.00">Grande - Php 80.00</option>
+              <option value="venti" data-price="100.00">Venti - Php 100.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 5: Matcha Hot Tea -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="5" data-name="Matcha Hot Tea" data-category="drinks">
+            <img src="Matcha Hot Tea.png" alt="Matcha Hot Tea" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Hot Tea</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 50.00</div>
+              <div class="variant-item">Grande - Php 70.00</div>
+              <div class="variant-item">Venti - Php 90.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="50.00">Regular - Php 50.00</option>
+              <option value="grande" data-price="70.00">Grande - Php 70.00</option>
+              <option value="venti" data-price="90.00">Venti - Php 90.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 6: Matcha Hibiscus Iced Tea -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="6" data-name="Matcha Hibiscus Iced Tea" data-category="drinks">
+            <img src="Matcha Hibiscus Iced Tea.png" alt="Matcha Hibiscus Iced Tea" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Hibiscus Iced Tea</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">Regular - Php 85.00</div>
+              <div class="variant-item">Grande - Php 100.00</div>
+              <div class="variant-item">Venti - Php 115.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="regular" data-price="85.00">Regular - Php 85.00</option>
+              <option value="grande" data-price="100.00">Grande - Php 100.00</option>
+              <option value="venti" data-price="115.00">Venti - Php 115.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2: Desserts -->
+      <div class="category">
+        <h3 class="text-lg font-semibold mb-4">Desserts & Pastries</h3>
+        <div class="products-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Product 7: Matcha Cookies with Dalgona Nuts -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="7" data-name="Matcha Cookies w/ Dalgona Nuts" data-category="desserts">
+            <img src="Matcha Cookies with Dalgona Nuts.jpg" alt="Matcha Cookies w/ Dalgona Nuts" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Cookies w/ Dalgona Nuts</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">1 piece - Php 20.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="piece" data-price="20.00">1 piece - Php 20.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 8: Matcha Strawberry Japanese Cake -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="8" data-name="Matcha Strawberry Japanese Cake" data-category="desserts">
+            <img src="Matcha Strawberry Japanese Cake.png" alt="Matcha Strawberry Japanese Cake" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Strawberry Japanese Cake</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">1 Slice - Php 130.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="slice" data-price="130.00">1 Slice - Php 130.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 9: Matcha Blueberry Cheesecake -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="9" data-name="Matcha Blueberry Cheesecake" data-category="desserts">
+            <img src="Matcha Blueberry Cheesecake.png" alt="Matcha Blueberry Cheesecake" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Blueberry Cheesecake</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">1 Slice - Php 130.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="slice" data-price="130.00">1 Slice - Php 130.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 10: Matcha Souffle Pancakes -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="10" data-name="Matcha Souffle Pancakes" data-category="desserts">
+            <img src="Matcha Souffle Pancakes.png" alt="Matcha Souffle Pancakes" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Souffle Pancakes</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">3 pieces - Php 95.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="set" data-price="95.00">3 pieces - Php 95.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 11: Matcha Glazed Doughnuts -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="11" data-name="Matcha Glazed Doughnuts" data-category="desserts">
+            <img src="Matcha Glazed Doughnuts.png" alt="Matcha Glazed Doughnuts" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Glazed Doughnuts</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">1 piece - Php 65.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="piece" data-price="65.00">1 piece - Php 65.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+
+          <!-- Product 12: Matcha Ice Cream -->
+          <div class="product bg-white shadow-lg rounded-lg overflow-hidden p-4" data-id="12" data-name="Matcha Ice Cream" data-category="desserts">
+            <img src="Matcha Ice Cream.png" alt="Matcha Ice Cream" class="w-full h-40 object-cover mb-4">
+            <h3 class="text-lg font-semibold mb-2">Matcha Ice Cream</h3>
+            <div class="product-variants mb-4">
+              <div class="variant-item">1 Scoop - Php 40.00</div>
+            </div>
+            <select class="variant-select mb-4 w-full border p-2 rounded">
+              <option value="scoop" data-price="40.00">1 Scoop - Php 40.00</option>
+            </select>
+            <button class="add-btn w-full py-2 bg-green-600 text-white rounded">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    <!-- Cart Section -->
+    <div id="cart" class="mt-10 p-4 bg-white rounded shadow">
+      <h2 class="text-xl font-semibold mb-4">Your Cart</h2>
+      <ul id="cart-items" class="space-y-2"></ul>
+      <div class="mt-4 font-bold">Total: ₱<span id="cart-total">0.00</span></div>
+
+      <div class="mt-4 flex justify-between">
+        <button id="clear-cart" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Clear Cart</button>
+        <button id="checkout" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded hidden">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Cart Functionality -->
+  <script>
+    const cartItems = [];
+    const cartList = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const checkoutBtn = document.getElementById('checkout');
+    const clearCartBtn = document.getElementById('clear-cart');
+
+    // Function to update cart items in the UI
+    function updateCart() {
+      cartList.innerHTML = '';
+      let total = 0;
+
+      cartItems.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = "flex justify-between items-center bg-gray-100 p-2 rounded";
+
+        // Display item information with quantity and cost
+        const itemText = document.createElement('span');
+        itemText.textContent = `${item.name} (${item.variant}) - ₱${(item.price * item.quantity).toFixed(2)} (x ${item.quantity})`;
+
+        const controls = document.createElement('div');
+        controls.className = "flex items-center space-x-2";
+
+        // Minus button
+        const minusBtn = document.createElement('button');
+        minusBtn.textContent = '-';
+        minusBtn.className = 'bg-gray-300 px-2 rounded';
+        minusBtn.onclick = () => {
+          if (item.quantity > 1) {
+            item.quantity--;
+          } else {
+            cartItems.splice(index, 1);
+          }
+          updateCart();
+        };
+
+        // Plus button
+        const plusBtn = document.createElement('button');
+        plusBtn.textContent = '+';
+        plusBtn.className = 'bg-gray-300 px-2 rounded';
+        plusBtn.onclick = () => {
+          item.quantity++;
+          updateCart();
+        };
+
+        // Remove button
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Remove';
+        removeBtn.className = 'bg-red-500 text-white px-2 rounded';
+        removeBtn.onclick = () => {
+          cartItems.splice(index, 1);
+          updateCart();
+        };
+
+        controls.appendChild(minusBtn);
+        controls.appendChild(plusBtn);
+        controls.appendChild(removeBtn);
+
+        li.appendChild(itemText);
+        li.appendChild(controls);
+        cartList.appendChild(li);
+
+        total += item.price * item.quantity;
+      });
+
+      cartTotal.textContent = total.toFixed(2);
+
+      // Show "Proceed to Checkout" if the cart is not empty
+      if (cartItems.length > 0) {
+        checkoutBtn.classList.remove('hidden');
+      } else {
+        checkoutBtn.classList.add('hidden');
+      }
+    }
+
+    // Add product to cart
+    document.querySelectorAll('.add-btn').forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const productElement = e.target.closest('.product');
+        const name = productElement.dataset.name;
+        const price = parseFloat(productElement.querySelector('.variant-select').selectedOptions[0].getAttribute('data-price'));
+        const variant = productElement.querySelector('.variant-select').value;
+
+        const existingItem = cartItems.find(item => item.name === name && item.variant === variant);
+        if (existingItem) {
+          existingItem.quantity++;
+        } else {
+          cartItems.push({ name, price, variant, quantity: 1 });
+        }
+
+        updateCart();
+      });
+    });
+
+    // Clear cart
+    clearCartBtn.addEventListener('click', () => {
+      cartItems.length = 0;
+      updateCart();
+    });
+  </script>
+</body>
+
+</html>

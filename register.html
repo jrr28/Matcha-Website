@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration and Login</title>
+  <link rel="stylesheet" href="input-style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">迎</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="addToCart.html">Menu</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button>&#128269;</button>
+        </div>
+        <div class="icons">
+            <div class="cart-icon">&#128722;</div>
+            <a href="register.html"><div class="profile-icon">&#128100;</div></a>
+        </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Sign Up Form -->
+    <div class="form-container active" id="signup-form">
+      <h1>Sign Up</h1>
+      <form>
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <div class="login-link">
+          <a href="#" id="to-login">Already have an account? Login</a>
+        </div>
+        <div class="action-area">
+          <div class="divider">or</div>
+          <div class="social-login">
+            <div class="social-btn">
+              <img src="Google.png" alt="Google">
+            </div>
+            <div class="social-btn">
+              <img src="Facebook.png" alt="Facebook">
+            </div>
+            <div class="social-btn">
+              <img src="Instagram.png" alt="Instagram">
+            </div>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-container" id="login-form">
+      <h1>Login</h1>
+      <form>
+        <div class="input-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" name="login-email" required>
+        </div>
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" name="login-password" required>
+        </div>
+        <div class="login-link">
+          <a href="#" id="to-signup">Don't have an account? Sign Up</a>
+        </div>
+        <div class="action-area">
+          <button type="submit" class="btn">Login</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div class="form-container" id="dashboard">
+      <h1>Welcome, <span id="user-name">User</span>!</h1>
+      <div class="input-group">
+        <label>Email:</label>
+        <p id="user-email" class="dashboard-text"></p>
+      </div>
+      <div class="input-group">
+        <label>Account Info:</label>
+        <div id="account-details" class="dashboard-text"></div>
+      </div>
+      <div class="action-area">
+        <button class="btn" id="logout-btn">Logout</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
